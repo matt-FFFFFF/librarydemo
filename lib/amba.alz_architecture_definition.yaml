@@ -2,18 +2,21 @@ name: custom-amba
 management_groups:
   - archetypes:
       - "root"
+      - "amba_root"
     display_name: "Azure Landing Zones"
     exists: false
     id: "myalz"
     parent_id: null
   - archetypes:
       - "platform"
+      - "amba_platform"
     display_name: "Platform"
     exists: false
     id: "platform"
     parent_id: "myalz"
   - archetypes:
       - "landing_zones"
+      - "amba_landing_zones"
     display_name: "Landing zones"
     exists: false
     id: "landingzones"
@@ -38,18 +41,21 @@ management_groups:
     parent_id: "myalz"
   - archetypes:
       - "management"
+      - "amba_management"
     display_name: "Management"
     exists: false
     id: "management"
     parent_id: "platform"
   - archetypes:
       - "connectivity"
+      - "amba_connectivity"
     display_name: "Connectivity"
     exists: false
     id: "connectivity"
     parent_id: "platform"
   - archetypes:
       - "identity"
+      - "amba_identity"
     display_name: "Identity"
     exists: false
     id: "identity"
