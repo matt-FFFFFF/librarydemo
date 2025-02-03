@@ -1,0 +1,14 @@
+{
+  "name": "my custom library",
+  "description": "This is a demo of using the AMBA and ALZ library references together to construct a more complex architecture.",
+  "dependencies": [
+    {
+      "path": "platform/alz",
+      "ref": "2025.01.0"
+    },
+    {
+      "path": "platform/amba",
+      "ref": "2024.12.0"
+    }
+  ]
+}
